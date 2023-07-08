@@ -1,5 +1,9 @@
 # Sample portfoli versions
 
 ## portfolio v1:
-     ![Screenshot](./"potfolio v1"/portfolio-v1-screenshot.jpeg)
+
+![Screenshot](./screenshot/project1.jpeg)
+
 ## portfolio v2: 
+
+![Screenshot](./screenshot/project1.jpeg)
