@@ -6,4 +6,4 @@
 
 ## portfolio v2: 
 
-![Screenshot](./screenshot/project1.jpeg)
+![Screenshot](./screenshot/project2.jpeg)
