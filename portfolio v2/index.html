@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <title>Portfolio</title>
+  <style>
+    /* Optional custom styles */
+    .card {
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body class="text-white bg-gradient-to-r from-blue-700 to-blue-900">
+  <header class="bg-blue-900">
+    <div class="container mx-auto flex justify-between items-center py-4">
+      <h1 class="text-2xl font-bold">HA</h1>
+      <nav>
+        <ul class="flex space-x-4">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- hero section -->
+  <section id="hero" class="py-16 bg-white text-blue-900">
+    <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between">
+        <div>
+            <h2 class="text-4xl font-bold mb-4">I'm Abdelaziz Hanzaz</h2>
+            <p class="text-lg">Full Stack Developer with +5 years...</p>
+    
+            <div class="mt-8">
+              <a href="#" class="inline-block bg-blue-900 hover:bg-blue-700 text-white px-6 py-3 rounded-lg mr-4">Download CV</a>
+              <a href="#" class="inline-block bg-transparent hover:bg-blue-700 hover:text-white border border-blue-900 text-blue-900 px-6 py-3 rounded-lg">Hire Me</a>
+            </div>
+          </div>
+      <div class="mt-8 lg:mt-0 flex flex-row justify-between lg:flex-col lg:sgap-4">
+        <a href="#" class="text-blue-900 hover:text-blue-700 text-2xl"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-blue-900 hover:text-blue-700 text-2xl"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="text-blue-900 hover:text-blue-700 text-2xl"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </section>
+  <!-- end hero section -->
+
+  <!-- about section -->
+  <section id="about" class="py-8">
+    <div class="container mx-auto">
+      <h2 class="text-2xl font-bold text-center mb-8">About Me</h2>
+      
+      <div class="flex flex-col lg:flex-row lg:items-center items-stretch">
+        <div class="lg:w-1/4">
+          <img src="images/abdelazizhanzaz.jpg" alt="Profile Image" class="w-full object-cover rounded-lg h-full">
+        </div>
+        
+        <div class="lg:w-1/2 bg-gradient-to-r from-blue-700 to-blue-900 text-white p-8 rounded-lg mt-8 lg:mt-0">
+          <h3 class="text-2xl font-bold mb-4">Full-Stack Developer</h3>
+          <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end about section-->
+  
+  <!-- skills section -->
+  <section id="skills" class="py-8 bg-white text-blue-900">
+    <div class="container mx-auto">
+      <h2 class="text-2xl text-blue-900 font-bold text-center mb-8">Skills</h2>
+  
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div class="bg-white rounded-lg shadow-lg p-6">
+          <h3 class="text-xl font-bold mb-2">Front-End Development</h3>
+          <ul class="list-disc pl-6">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+          </ul>
+        </div>
+        
+        <div class="bg-white rounded-lg shadow-lg p-6">
+          <h3 class="text-xl font-bold mb-2">Back-End Development</h3>
+          <ul class="list-disc pl-6">
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>Python</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+        
+        <div class="bg-white rounded-lg shadow-lg p-6">
+          <h3 class="text-xl font-bold mb-2">UI/UX Design</h3>
+          <ul class="list-disc pl-6">
+            <li>Wireframing</li>
+            <li>Prototyping</li>
+            <li>User Research</li>
+            <li>Usability Testing</li>
+          </ul>
+        </div>
+        
+        <div class="bg-white rounded-lg shadow-lg p-6">
+          <h3 class="text-xl font-bold mb-2">DevOps</h3>
+          <ul class="list-disc pl-6">
+            <li>Git</li>
+            <li>Docker</li>
+            <li>CI/CD</li>
+            <li>AWS</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- end skills section -->
+
+  <!-- Project Card Items... -->
+  <section id="projects" class="py-8">
+    <div class="container mx-auto">
+      <h2 class="text-2xl font-bold text-center mb-8">Projects</h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        
+           <!-- Project Card Item 1 -->
+      <div class="card bg-white rounded-lg shadow-lg">
+        <img src="images/project1.jpeg" alt="Project 1" class="w-full h-40 object-cover object-center rounded-t-lg">
+        <div class="p-4 text-blue-900">
+          <h2 class="text-lg font-bold mb-2">Project 1</h2>
+          <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a href="#" class="mt-4 inline-block bg-blue-800 text-white px-4 py-2 rounded-lg">View Details</a>
+        </div>
+      </div>
+
+      <!-- Project Card Item 2 -->
+      <div class="card bg-white rounded-lg shadow-lg">
+        <img src="project2.jpg" alt="Project 2" class="w-full h-40 object-cover object-center rounded-t-lg">
+        <div class="p-4 text-blue-900">
+          <h2 class="text-lg font-bold mb-2">Project 2</h2>
+          <p class="text-gray-700">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <a href="#" class="mt-4 inline-block bg-blue-800 text-white px-4 py-2 rounded-lg">View Details</a>
+        </div>
+      </div>
+
+      <!-- Project Card Item 3 -->
+      <div class="card bg-white rounded-lg shadow-lg">
+        <img src="project3.jpg" alt="Project 3" class="w-full h-40 object-cover object-center rounded-t-lg">
+        <div class="p-4 text-blue-900">
+          <h2 class="text-lg font-bold mb-2">Project 3</h2>
+          <p class="text-gray-700">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          <a href="#" class="mt-4 inline-block bg-blue-800 text-white px-4 py-2 rounded-lg">View Details</a>
+        </div>
+      </div>
+
+      <!-- Project Card Item 4 -->
+      <div class="card bg-white rounded-lg shadow-lg">
+        <img src="project4.jpg" alt="Project 4" class="w-full h-40 object-cover object-center rounded-t-lg">
+        <div class="p-4 text-blue-900">
+          <h2 class="text-lg font-bold mb-2">Project 4</h2>
+          <p class="text-gray-700">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          <a href="#" class="mt-4 inline-block bg-blue-800 text-white px-4 py-2 rounded-lg">View Details</a>
+        </div>
+      </div>
+
+      <!-- Project Card Item 5 -->
+      <div class="card bg-white rounded-lg shadow-lg">
+        <img src="project5.jpg" alt="Project 5" class="w-full h-40 object-cover object-center rounded-t-lg">
+        <div class="p-4 text-blue-900">
+          <h2 class="text-lg font-bold mb-2">Project 5</h2>
+          <p class="text-gray-700">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <a href="#" class="mt-4 inline-block bg-blue-800 text-white px-4 py-2 rounded-lg">View Details</a>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  
+  
+<!-- contact me -->
+<section id="contact" class="py-8 bg-white text-blue-900">
+    <div class="container mx-auto flex flex-col lg:flex-row">
+      <div class="lg:w-1/2">
+        <div class="bg-white rounded-lg shadow-lg p-6 mb-4">
+          <h3 class="text-2xl font-bold mb-4">Contact Information</h3>
+          <p class="mb-2"><i class="fas fa-envelope mr-2"></i> info@example.com</p>
+          <p class="mb-2"><i class="fas fa-phone-alt mr-2"></i> +1 123-456-7890</p>
+          <p class="mb-2"><i class="fas fa-map-marker-alt mr-2"></i> 123 Main Street, City, Country</p>
+        </div>
+      </div>
+      
+      <div class="lg:w-1/2 ">
+        <div class="max-w-md mx-auto bg-white rounded-lg shadow-lg p-6 ">
+          <h2 class="text-2xl font-bold text-center mb-8">Contact Me</h2>
+          <form>
+            <div class="mb-4">
+              <label for="name" class="block text-gray-700 font-bold mb-2">Name</label>
+              <input type="text" id="name" name="name" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+            </div>
+            
+            <div class="mb-4">
+              <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
+              <input type="email" id="email" name="email" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+            </div>
+            
+            <div class="mb-4">
+              <label for="message" class="block text-gray-700 font-bold mb-2">Message</label>
+              <textarea id="message" name="message" rows="5" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500"></textarea>
+            </div>
+            
+            <div class="text-center">
+              <button type="submit" class="bg-blue-900 text-white px-4 py-2 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+<!-- end contact me-->
+
+<!-- footer -->
+<footer class="bg-blue-900 text-white py-8">
+    <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between">
+      <div class="text-center lg:text-left mb-4 lg:mb-0">
+        <p>&copy; 2023 abdelaziz hanzaz. All rights reserved.</p>
+      </div>
+      
+      <div class="flex space-x-4">
+        <a href="#" class="text-white hover:text-gray-400"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-white hover:text-gray-400"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="text-white hover:text-gray-400"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </footer>
+  
+<!--end footer -->
+</body>
+
+</html>
+
+   
+ 
